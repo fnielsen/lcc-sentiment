@@ -1,7 +1,20 @@
 lcc-sentiment
 =============
 
-Sentiment annotation of The Leipzig Corpora Collection
+Sentiment annotation of The Leipzig Corpora Collection.
+
+Manual sentiment annotation by Finn Årup Nielsen of Danish sentences.
+
+Data
+----
+The data is directly derived from The Leipzig Corpora Collection which is downloadable from http://corpora2.informatik.uni-leipzig.de/download.html.
+The format in the data files is changed slightly from tab-separated to comma-separated and an column header is added.
+An extra column is introduced called 'valence'.
+This contains the sentiment scoring. 
+The scoring follows the pattern from AFINN with integer scoring from -5 to +5,
+though for most sentence, if any, the full range of the score is not used. 
+
+An example in Python with the Pandas for reading the data with the read_csv function is shown in the Jupyter Notebook.
 
 
 Citation
